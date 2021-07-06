@@ -1,5 +1,18 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+
 spec:
-  containers:
-  - image: us.gcr.io/servers-294415/lab-ping/ping@sha256:9517640b240386f8a061db5f4e1fa6f4ad44d38c8b62b5b7aae409b5ce3e034e
-    ports:
-    - containerPort: 80
+  template:
+    metadata:
+    spec:
+      - image: us.gcr.io/servers-294415/lab-ping/git-ping:078c0d41e76a076cc7ba158314c98a905df332c6
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512M
+
+traffic:
+  - percent: 100
+    latestRevision: true

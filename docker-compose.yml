@@ -1,5 +1,5 @@
 spec:
-    containers:
-    - image: anir0y/ping:latest
-      ports:
-      - containerPort: 8000
+  containers:
+  - image: us.gcr.io/servers-294415/lab-ping/ping@sha256:9517640b240386f8a061db5f4e1fa6f4ad44d38c8b62b5b7aae409b5ce3e034e
+    ports:
+    - containerPort: 80

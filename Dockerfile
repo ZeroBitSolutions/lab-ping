@@ -13,7 +13,7 @@ RUN apt-get install nginx -y
 RUN rm -rf /var/www/html
 RUN git clone https://github.com/ZeroBitSolutions/lab-ping.git /var/www/html
 # Expose port 80
-EXPOSE 80
+EXPOSE 8000
  
 #
 # Last is the actual command to start up NGINX within our Container

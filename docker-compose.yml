@@ -1,0 +1,5 @@
+spec:
+    containers:
+    - image: anir0y/ping:latest
+      ports:
+      - containerPort: 80

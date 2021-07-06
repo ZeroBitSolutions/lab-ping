@@ -6,7 +6,6 @@ LABEL maintainer="ani@arishtisecurity.com"
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y tzdata
 
-#
 # Install NGINX to test.
 RUN apt-get install git -y
 RUN apt-get install nginx -y

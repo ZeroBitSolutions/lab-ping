@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-LABEL maintainer="myname@somecompany.com"
+LABEL maintainer="ani@arishtisecurity.com"
 
 #run stuffs
 RUN apt-get update && apt-get upgrade -y
